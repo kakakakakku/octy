@@ -1,5 +1,5 @@
-require "octy/version"
+require 'octy/version'
 
 module Octy
-  # Your code goes here...
+  autoload :CLI, 'octy/cli'
 end

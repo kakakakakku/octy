@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "octy"
+
+Octy::CLI.start
