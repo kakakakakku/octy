@@ -2,6 +2,10 @@
 
 Generate GitHub repository changelog.
 
+[![Gem Version](https://badge.fury.io/rb/octy.svg)](http://badge.fury.io/rb/octy)
+[![Build Status](https://travis-ci.org/Kakakakakku/octy.svg)](https://travis-ci.org/Kakakakakku/octy)
+[![Code Climate](https://codeclimate.com/github/Kakakakakku/octy/badges/gpa.svg)](https://codeclimate.com/github/Kakakakakku/octy)
+
 ## Installation
 
 Add this line to your application's Gemfile:
