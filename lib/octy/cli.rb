@@ -6,7 +6,7 @@ module Octy
 
   class CLI < Thor
 
-    desc 'gen', 'Generate sample host name by mnemonic wordlist.'
+    desc 'changelog', 'Generate GitHub repository changelog'
     method_options repo: :string
     method_options from: :string
     method_options to: :string
