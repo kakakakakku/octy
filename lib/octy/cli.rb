@@ -1,6 +1,7 @@
 require 'thor'
 require 'octokit'
 require 'octy/core'
+require 'octy/error'
 
 module Octy
 
@@ -15,6 +16,10 @@ module Octy
       begin
         octy = Octy::Core.new
         octy.changelog(options[:repo], options[:from], options[:to])
+      rescue Octokit::Unauthorized
+        raise Octy::InvalidAccessTokenError
+      rescue Octokit::NotFound
+        raise Octy::InvalidResourceError
       rescue => e
         puts e.message
       end
