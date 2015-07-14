@@ -14,7 +14,7 @@ module Octy
 
     def changelog(repo, from, to)
       comparison = @client.compare(repo, from, to)
-      commits = comparison.commits
+      commits = comparison.commits.reverse
       commits.map do |commit|
         message = commit.commit.message
         if is_merge_pr?(message)
